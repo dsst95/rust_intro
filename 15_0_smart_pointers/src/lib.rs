@@ -69,6 +69,6 @@ mod tests {
 
     limit_tracker.set_value(80);
 
-    assert_eq!(mock_messenger.sent_messages.len(), 1);
+    assert_eq!(mock_messenger.sent_messages.borrow().len(), 1);
   }
 }
